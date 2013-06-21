@@ -76,7 +76,7 @@ module Poker
 
     def straight_flush
       return nil unless is_straight? && is_flush?
-      values.first
+      [values.first]
     end
 
     def is_straight?
